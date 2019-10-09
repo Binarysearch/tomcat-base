@@ -18,7 +18,7 @@ pipeline {
     stages {
         stage('Install') {
             steps {
-                sh 'git clone https://github.com/Binarysearch/piros.git && cd piros && mvn install && cd .. && rm -R -f ./piros/'
+                sh 'mvn install:install-file -Dfile=./lib/piros-1.0.0.jar -DgroupId=org.piros -DartifactId=piros -Dversion=1.0.0 -Dpackaging=jar'
             }
         }
         stage('Build') {
