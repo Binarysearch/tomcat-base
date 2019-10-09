@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context>
+
+    
+    <Resource name="jdbc/DefaultDB" auth="Container" type="javax.sql.DataSource"
+          username="${dbuser}" password="${dbpassword}"
+          url="jdbc:postgresql://${dbhost}:5432/${dbname}"
+          driverClassName="org.postgresql.Driver"
+          initialSize="5" maxWaitMillis="5000"
+          maxActive="120" maxIdle="5"
+          validationQuery="select 1"
+          poolPreparedStatements="false"/>
+    
+
+</Context>
