@@ -18,7 +18,7 @@ pipeline {
     stages {
         stage('Install') {
             steps {
-                sh 'git clone https://github.com/Binarysearch/piros.git && cd piros && mvn install && cd .. && rm -R -f ./piros/ &&'
+                sh 'git clone https://github.com/Binarysearch/piros.git && cd piros && mvn install && cd .. && rm -R -f ./piros/'
             }
         }
         stage('Build') {
