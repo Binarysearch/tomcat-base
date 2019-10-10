@@ -3,18 +3,32 @@ package com.example.controllers;
 
 public class ExampleDto {
 
-    private String data;
+    private String field1;
+    private Integer field2;
 
-    public ExampleDto(String data) {
-        this.setData(data);
+    public ExampleDto() {
     }
 
-    public String getData() {
-        return data;
+    public ExampleDto(String field1, Integer field2) {
+        this.field1 = field1;
+        this.field2 = field2;
     }
 
-    public void setData(String data) {
-        this.data = data;
+    public String getField1() {
+        return field1;
     }
 
+    public void setField1(String field1) {
+        this.field1 = field1;
+    }
+
+    public Integer getField2() {
+        return field2;
+    }
+
+    public void setField2(Integer field2) {
+        this.field2 = field2;
+    }
+
+    
 }

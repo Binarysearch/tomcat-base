@@ -1,2 +1,2 @@
 // example
-curl -d '{"name":"Antonio"}' -H "Content-Type: application/json" -X POST http://localhost:8080/example
+curl -d '{"field1":"Something", "field2":15}' -H "Content-Type: application/json" -X POST http://localhost:8080/example
