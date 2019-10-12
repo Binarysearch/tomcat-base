@@ -17,8 +17,8 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.piros</groupId>
-			<artifactId>piros</artifactId>
-			<version>1.0.1</version>
+			<artifactId>core</artifactId>
+			<version>1.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet</groupId>

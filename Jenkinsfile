@@ -18,7 +18,9 @@ pipeline {
     stages {
         stage('Install') {
             steps {
-                sh 'mvn install:install-file -Dfile=./lib/piros-1.0.1.jar -DgroupId=org.piros -DartifactId=piros -Dversion=1.0.1 -Dpackaging=jar'
+                sh 'rm ./piros-1.0.0.jar || true'
+                sh 'wget https://github.com/Binarysearch/piros/releases/download/1.0.0/piros-1.0.0.jar'
+                sh 'mvn install:install-file -Dfile=./piros-1.0.0.jar -DgroupId=org.piros -DartifactId=piros -Dversion=1.0.0 -Dpackaging=jar'
             }
         }
         stage('Build') {
